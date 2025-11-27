@@ -1,0 +1,93 @@
+/* Custom styles for FindMyTutor application */
+
+/* General styles */
+body {
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Card hover effect */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Icon wrapper for cards */
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+/* Custom button styles */
+.btn-primary {
+  padding: 0.5rem 1.5rem;
+}
+
+/* Footer styling */
+footer a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #fff !important;
+}
+
+/* Social icons */
+.social-icons a {
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Profile image styles */
+.profile-image {
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard card styles */
+.dashboard-card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-card .card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+}
+
+/* Rating stars */
+.rating-stars {
+  color: #ffc107;
+}
+
+/* Custom form controls */
+.form-control:focus, .form-select:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+}
