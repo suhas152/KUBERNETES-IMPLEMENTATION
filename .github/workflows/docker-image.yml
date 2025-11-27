@@ -32,7 +32,7 @@ jobs:
           context: ./TUU
           file: ./TUU/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/TUTOR-backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/tutor-backend:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./tuu-app
           file: ./tuu-app/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/TUTOR-frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/tutor-frontend:latest
