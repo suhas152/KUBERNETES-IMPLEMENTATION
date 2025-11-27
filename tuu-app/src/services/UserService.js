@@ -1,7 +1,7 @@
 import axios from 'axios';
 import AuthService from './AuthService';
 
-const API_URL = 'http://localhost:2025/user/';
+const API_URL = 'http://localhost:30025/user/';
 
 class UserService {
   // Get current user profile

@@ -1,9 +1,9 @@
 import axios from 'axios';
 
 // Base URLs per controllers provided
-const STUDENT_API = 'http://localhost:2025/student';
-const TUTOR_API = 'http://localhost:2025/tutor';
-const ADMIN_API = 'http://localhost:2025/admin';
+const STUDENT_API = 'http://localhost:30025/student';
+const TUTOR_API = 'http://localhost:30025/tutor';
+const ADMIN_API = 'http://localhost:30025/admin';
 
 class BookingService {
   // Student: book a tutor

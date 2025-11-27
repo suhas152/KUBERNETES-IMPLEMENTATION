@@ -1,7 +1,7 @@
 import axios from 'axios';
 import AuthService from './AuthService';
 
-const API_URL = 'http://localhost:2025/tutor';
+const API_URL = 'http://localhost:30025/tutor';
 
 class TutorService {
   // Get all tutors
