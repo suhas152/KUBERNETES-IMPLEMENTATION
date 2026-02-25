@@ -16,26 +16,8 @@ The application includes:
 
 📌 Project Architecture
 🏗️ High-Level Architecture
-                    +----------------------+
-                    |      Web Browser     |
-                    +----------+-----------+
-                               |
-                               v
-                    +----------------------+
-                    |   Frontend Pod       |
-                    |   (Nginx / React)    |
-                    +----------+-----------+
-                               |
-                               v
-                    +----------------------+
-                    |   Backend Pod        |
-                    |   (Spring Boot)      |
-                    +----------+-----------+
-                               |
-                               v
-                    +----------------------+
-                    |     MySQL Pod        |
-                    +----------------------+
+                   <img width="458" height="358" alt="image" src="https://github.com/user-attachments/assets/7f629836-f001-4809-a4f2-4e105bb48bca" />
+
 📂 Project Structure
 tuition-app-k8s/
 │
@@ -73,27 +55,8 @@ Secret	Stores sensitive data
 Ingress	External access routing
 Persistent Volume	Database storage
 📊 Kubernetes Architecture Diagram
-                     +---------------------+
-                     |      Ingress        |
-                     +----------+----------+
-                                |
-        -------------------------------------------------
-        |                                               |
-+-------------------+                         +-------------------+
-| Frontend Service  |                         | Backend Service   |
-+--------+----------+                         +--------+----------+
-         |                                             |
-+--------v----------+                         +--------v----------+
-| Frontend Pods     |                         | Backend Pods      |
-+-------------------+                         +--------+----------+
-                                                       |
-                                               +-------v--------+
-                                               | MySQL Service  |
-                                               +-------+--------+
-                                                       |
-                                               +-------v--------+
-                                               |  MySQL Pod     |
-                                               +----------------+
+                   <img width="590" height="469" alt="image" src="https://github.com/user-attachments/assets/5bd7c0b9-7d45-4a52-8d7e-26bc349a082f" />
+
 🛠️ Deployment Steps
 1️⃣ Build Docker Images
 docker build -t tuition-frontend ./frontend
